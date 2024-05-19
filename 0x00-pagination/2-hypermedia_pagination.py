@@ -64,7 +64,7 @@ class Server:
         [start, end] = index_range(page, page_size)
         return self.dataset()[start:end]
 
-    def get_hyper (self, page: int = 1, page_size: int = 10) -> Dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """get_hyper
 
         Returns a dictionary of key value pairs.
@@ -72,14 +72,14 @@ class Server:
         Arguments:
             page (int): The page numbers. Default to 1.
             page_size (int): The page size. Default to 10.
-        
+
         Return:
             (Dictionary): A key value pair dictionary.
         """
         dataset = self.get_page(page, page_size)
         page_dict = math.ceil(len(self.__dataset) / page_size)
         return {
-            'page_size': len(dataset), 
+            'page_size': len(dataset),
             'page': page,
             'data': dataset,
             'next_page': page + 1 if (page + 1) <= page_dict else None,
