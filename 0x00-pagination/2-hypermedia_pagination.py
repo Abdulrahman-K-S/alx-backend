@@ -77,12 +77,14 @@ class Server:
             (Dictionary): A key value pair dictionary.
         """
         dataset = self.get_page(page, page_size)
-        page_dict = math.ceil(len(self.__dataset) / page_size)
+        total_items = len(self.dataset)
+        total_pages = math.ceil(total_items / page_size)
+
         return {
             'page_size': len(dataset),
             'page': page,
             'data': dataset,
-            'next_page': page + 1 if (page + 1) <= page_dict else None,
-            'prev_page': page - 1 if (page - 1) > 0 else None,
-            'total_page': page_dict,
+            'next_page': page + 1 if page < total_pages else None,
+            'prev_page': page - 1 if page > 1 else None,
+            'total_page': total_pages,
         }
