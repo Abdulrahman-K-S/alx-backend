@@ -86,5 +86,5 @@ class Server:
             'data': dataset,
             'next_page': page + 1 if page + 1 <= total_pages else None,
             'prev_page': page - 1 if page > 1 else None,
-            'total_page': total_pages,
+            'total_pages': total_pages,
         }
