@@ -41,7 +41,9 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """get_hyper_index
-        
+
+        This method that takes 2 arguments and returns a key_value pair
+
         Arguments:
             index (int): The current starting index of the page to return.
                         Default value None.
@@ -50,7 +52,7 @@ class Server:
         Return:
             (Dict): A dictionary of key value pairs.
         """
-        if index == None:
+        if index is None:
             index = 0
         assert (isinstance(index, int))
         assert (index > 0 and index < len(self.__indexed_dataset))
