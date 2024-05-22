@@ -37,7 +37,6 @@ class LIFOCache(BaseCaching):
             self.cache_data.pop(self._last_item)
             print("DISCARD: {}".format(self._last_item))
         self._last_item = key
-        
 
     def get(self, key):
         """get
