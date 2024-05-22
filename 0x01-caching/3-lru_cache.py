@@ -39,7 +39,6 @@ class LRUCache(BaseCaching):
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             discard = self.cache_data.popitem(last=False)
             print("DISCARD: {}".format(discard[0]))
-        
 
     def get(self, key):
         """get
