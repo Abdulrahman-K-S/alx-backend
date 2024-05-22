@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Task 2. LIFO Caching
+Task 3. LRU Caching
 
 Class LRUCache inheriting BaseCaching
 """
