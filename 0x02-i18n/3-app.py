@@ -33,7 +33,6 @@ def index():
     return render_template('3-index.html')
 
 
-@babel.localeselector
 def get_locale():
     """get_locale
 
@@ -44,5 +43,6 @@ def get_locale():
 
 
 if __name__ == '__main__':
+    babel.init_app(app, locale_selector=get_locale)
     app.config.from_object('3-app.Config')
     app.run(host='0.0.0.0', port='5000')
