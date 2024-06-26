@@ -2,7 +2,7 @@ import redis from "redis";
 
 // Creates a client which listens on local host by default
 // with the port 6379
-const client = redis.getClient();
+const client = redis.createClient();
 
 // Executes when the connection is executed correctly
 client.on('connect', () => {
