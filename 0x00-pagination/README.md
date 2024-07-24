@@ -41,7 +41,7 @@
 - All your functions and coroutines must be type-annotated.
 
 # Setup: `Popular_Baby_Names.csv`
-[use this data file](https://intranet.alxswe.com/rltoken/NBLY6mdKDBR9zWvNADwjjg) for your project
+[use this data file](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2020/5/7d3576d97e7560ae85135cc214ffe2b3412c51d7.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240724%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240724T224630Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9b08c2cccf2dee416fbdfd16cb8f5a50844eea390053ea7a24b6199dfdca10c2) for your project
 
 # <p align='center'> Tasks</p>
 
